@@ -120,7 +120,7 @@ public class W3_4_CodingAssignment {
 /*	STEP 7.	Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated
  * 			to itself n number of times. (i.e. if I pass in “Hello” and 3, I expect the method to return “HelloHelloHello”).	*/
 
-		System.out.println("STEP 7.   result:  " + (multiplyString("Vicky", 4)));
+		System.out.println("STEP 7.   result:  " + (multiplyString("Vicki", 4)));
 		
 //*************************************************************************
 
@@ -195,7 +195,6 @@ public class W3_4_CodingAssignment {
 	} // end MAIN
 	
 //*************************************************************************
-//*************************************************************************	
 	
 /*	STEP 7 METHOD.	Write a method that takes a String, word, and an int, n, as arguments and returns the word concatenated
  *					to itself n number of times.	*/
