@@ -94,26 +94,22 @@ public class W3_4_CodingAssignment {
 			nameLengths[i] = names[i].length();
 		} // end FOR
 		
+		System.out.print("STEP 5.   result:  ");
+		for (int x = 0; x < nameLengths.length; x++) {
+			System.out.print(nameLengths[x] + " ");
+		} // end FOR
+		System.out.println();		// carriage return		
+		
 //*************************************************************************		
 		
 /*	STEP 6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array.
- *			Print the result to the console.
-
- *			I did it two ways: enhanced for loop and standard for loop.	*/
-		
-		// enhanced for loop
+ *			Print the result to the console.	*/
+ 		
 		int nameLengthSum = 0;
 		for (int nameLength : nameLengths) {
 			nameLengthSum += nameLength;
 		} // end FOR
 		System.out.println("STEP 6.   result:  " + (nameLengthSum));
-		
-		// standard for loop - not printed to console
-		nameLengthSum = 0;
-		for (int i = 0; i < nameLengths.length; i++) {
-			nameLengthSum += nameLengths[i];
-		} // end FOR
-		//System.out.println("STEP 6.   result:  " + (nameLengthSum));
 		
 //*************************************************************************
 
@@ -134,20 +130,10 @@ public class W3_4_CodingAssignment {
 //*************************************************************************
 
 /*	STEP 9.	Write a method that takes an array of int and returns true if the sum of all the ints
- * 			in the array is greater than 100.
- * 
- * 			I used a self-generating array and then again with the array given.	*/
-
-		// self-generating array - length 11 gives true, length 10 gives false - not printed to console
-		int[] intArray = new int[11];		 
-		for (int i = 0; i < intArray.length; i++) {
-			intArray[i] = i * 2;
-		} // end FOR
-		//System.out.println("STEP 9.   result:  " + (sumArray(intArray)));
+ * 			in the array is greater than 100.	*/
 		
-		// given array
-		int[] intArray2 = {25, 25, 25, 25};
-		System.out.println("STEP 9.   result:  " + (sumArray(intArray2)));
+		int[] intArray = {25, 25, 25, 25};
+		System.out.println("STEP 9.   result:  " + (sumArray(intArray)));
 		
 //*************************************************************************
 		
@@ -162,8 +148,8 @@ public class W3_4_CodingAssignment {
  *				in the first array is greater than the average of the elements in the second array.	*/
 		
 		// arrays are similar to allow for testing
-		double[] dblArray1 = {4, 9.24, 23.99, 64.54};
-		double[] dblArray2 = {4.99, 9.24, 23.99, 64.54};
+		double[] dblArray1 = {4.99, 9.24, 23.99, 64.54};
+		double[] dblArray2 = {5, 9.24, 23.99, 64.54};
 		System.out.println("STEP 11.  result:  " + (compareArrayAverage(dblArray1, dblArray2)));
 		
 //*************************************************************************		
@@ -171,7 +157,7 @@ public class W3_4_CodingAssignment {
 /*	STEP 12.	Write a method called willBuyDrink that takes a boolean isHotOutside, and a double moneyInPocket,
  * 				and returns true if it is hot outside and if moneyInPocket is greater than 10.50.	*/
 		
-		boolean isHotOutside = false;
+		boolean isHotOutside = true;
 		double moneyInPocket = 10.51;
 		System.out.println("STEP 12.  result:  " + (willBuyDrink(isHotOutside, moneyInPocket)));
 		
@@ -183,7 +169,7 @@ public class W3_4_CodingAssignment {
  * 	calculates the amount of tax on the cost, and returns the amount of the tax. Calculating the amount of sales tax
  * 	is a useful function and often needed.	*/
 		
-		double cost = 23.49;
+		double cost = 10.00;
 		double taxRatePercentage = 7.25;
 		double tax = calculateTax(cost, taxRatePercentage);
 		System.out.print("STEP 13.  result:  ");
